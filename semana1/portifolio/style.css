@@ -6,6 +6,7 @@
     font-style: oblique;
     }
 
+
 .cabecalho {
     background-color: rgb(152, 38, 180);
     height: 250px;
@@ -41,6 +42,7 @@ h2 {
     float: left;
     border: 1px solid rgb(128, 126, 150);
     background-color: rgb(221, 195, 81);
+
     text-align: center;
     margin: 10px 0 10px 10px;
     padding: 8px;
