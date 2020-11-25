@@ -3,126 +3,126 @@
   }
 
   .grid {
-
+    display: grid;
   }
   
 
-  
-.nivel1 {
+
+.nivel-1 {
     grid-column-start: 3;
 }
 
-.nivel2 {
+.nivel-2 {
     grid-column-start: 5;
 }
 
-.nivel3 {
+.nivel-3 {
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
-.nivel4 {
+.nivel-4 {
     grid-column-start: 5;
     grid-column-end: 2;
 }
 
-.nivel5 {
+.nivel-5 {
     grid-column-start: 1;
     grid-column-end: -2;
 }
 
-.nivel6 {
+.nivel-6 {
     grid-column-start: -3;  
 }
 
-.nivel7 {
+.nivel-7 {
     grid-column-start: 2;
     grid-column-end: span 2;
 }
 
-.nivel8 {
+.nivel-8 {
     grid-column-start: 1;
-    grid-column-end: span 7;
+    grid-column-end: span 5;
 }
 
-.nivel9 {
+.nivel-9 {
     grid-column-start: span 3;
 }
 
-.nivel10 {
-    grid-column: 4/8;
+.nivel-10 {
+    grid-column: 4/6;
 }
 
-.nivel11 {
+.nivel-11 {
     grid-column: span 3/5;
 }
 
-.nivel12 {
+.nivel-12 {
     grid-row-start: 3;
 }
 
-.nicel13 {
+.nicel-13 {
     grid-row: 3/6;
 }
 
-.nivel14 {
+.nivel-14 {
     grid-column: 2;
     grid-row: 5;
 }
 
-.nivel15 {
+.nivel-15 {
     grid-column: 2/6;
     grid-row: 1/6;
 }
 
-.nivel16 {
-    grid-area: -6/-5/4/8;
+.nivel-16 {
+    grid-area: 1/2/4/6;
 }
 
-.nivel17 {
+.nivel-17 {
     grid-area: 2/3/5/6;
 }
 
-.nivel18 {
-    order: 4;
+.nivel-18 {
+    order: 5;
 }
 
-.nivel19 {
+.nivel-19 {
     order: -2;
 }
 
-.nivel20 {
+.nivel-20 {
     grid-template-columns: 50%;
 }
 
-.nivel21 {
+.nivel-21 {
     grid-template-columns: repeat(8, 12.5%);
 }
 
-.nivel22 {
+.nivel-22 {
     grid-template-columns: repeat(3, 100px 3em 40%);
 }
 
-.nivel23 {
+.nivel-23 {
     grid-template-columns: 1fr 5fr;
 }
 
-.nivel24 {
+.nivel-24 {
     grid-template-columns: 50px 1fr 1fr 1fr 50px;
 }
 
-.nivel25 {
+.nivel-25 {
     grid-template-columns: 75px 3fr 2fr;
 }
 
-.nivel26 {
-    grid-template-rows: 20px 10px 10px 10px 1fr;
+.nivel-26 {
+    grid-template-rows: 20px 10px 10px 10px 5fr;
 }
 
-.nivel27 {
+.nivel-27 {
     grid-template: 60% / 200px;
 }
 
-.nivel28 {
+.nivel-28 {
     grid-template: 1fr 50px / 20% 80%;
 }

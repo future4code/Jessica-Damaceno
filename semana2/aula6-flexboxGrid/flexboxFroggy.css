@@ -8,116 +8,116 @@
     
 
   
-  .nivel1 {
+  .nivel-1 {
     justify-content: flex-end;
 }
 
-.nivel2 {
+.nivel-2 {
     justify-content: center;
 }
 
-.nivel3 {
+.nivel-3 {
     justify-content: space-around;
 }
 
-.nivel4 {
+.nivel-4 {
     justify-content: space-between;
 }
 
-.nivel5 {
+.nivel-5 {
     align-items: flex-end;
 }
 
-.nivel6 {
+.nivel-6 {
     justify-content: center;
     align-items: center;
 }
 
-.nivel7 {
+.nivel-7 {
     justify-content: space-around;
     align-items: flex-end;
 }
 
-.nivel8 {
+.nivel-8 {
     flex-direction: row-reverse;
 }
 
-.nivel9 {
+.nivel-9 {
     flex-direction: column;
 }
 
-.nivel10 {
+.nivel-10 {
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
-.nivel11 {
+.nivel-11 {
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.nivel12 {
+.nivel-12 {
     flex-direction: column-reverse;
     justify-content: space-between;
 }
 
-.nicel13 {
+.nicel-13 {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: flex-end;
 }
 
-.nivel14 {
-    order: 1;
+.nivel-14 {
+    order: 3;
 }
 
-.nivel15 {
-    order: -2;
+.nivel-15 {
+    order: -1;
 }
 
-.nivel16 {
+.nivel-16 {
     align-items: flex-start;
     align-self: flex-end;
 }
 
-.nivel17 {
+.nivel-17 {
     align-items: flex-start;
-    order: 4;
+    order: 2;
     align-self: flex-end;
 }
 
-.nivel18 {
+.nivel-18 {
     flex-wrap: wrap;
 }
 
-.nivel19 {
+.nivel-19 {
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.nivel20 {
+.nivel-20 {
     flex-flow: column wrap;
 }
 
-.nivel21 {
+.nivel-21 {
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
-.nivel22 {
+.nivel-22 {
     flex-wrap: wrap;
     align-content: flex-end;
 }
 
-.nivel23 {
+.nivel-23 {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     align-content: center;
 }
 
-.nivel24 {
-    flex-wrap: wrap-reverse;
+.nivel-24 {
     flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-content: space-between;
 }
