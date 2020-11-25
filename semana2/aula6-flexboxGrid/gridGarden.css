@@ -1,0 +1,128 @@
+* {
+    Grid;
+  }
+
+  .grid {
+    display: grid;
+  }
+  
+
+
+.nivel-1 {
+    grid-column-start: 3;
+}
+
+.nivel-2 {
+    grid-column-start: 5;
+}
+
+.nivel-3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.nivel-4 {
+    grid-column-start: 5;
+    grid-column-end: 2;
+}
+
+.nivel-5 {
+    grid-column-start: 1;
+    grid-column-end: -2;
+}
+
+.nivel-6 {
+    grid-column-start: -3;  
+}
+
+.nivel-7 {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
+
+.nivel-8 {
+    grid-column-start: 1;
+    grid-column-end: span 5;
+}
+
+.nivel-9 {
+    grid-column-start: span 3;
+}
+
+.nivel-10 {
+    grid-column: 4/6;
+}
+
+.nivel-11 {
+    grid-column: span 3/5;
+}
+
+.nivel-12 {
+    grid-row-start: 3;
+}
+
+.nicel-13 {
+    grid-row: 3/6;
+}
+
+.nivel-14 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.nivel-15 {
+    grid-column: 2/6;
+    grid-row: 1/6;
+}
+
+.nivel-16 {
+    grid-area: 1/2/4/6;
+}
+
+.nivel-17 {
+    grid-area: 2/3/5/6;
+}
+
+.nivel-18 {
+    order: 5;
+}
+
+.nivel-19 {
+    order: -2;
+}
+
+.nivel-20 {
+    grid-template-columns: 50%;
+}
+
+.nivel-21 {
+    grid-template-columns: repeat(8, 12.5%);
+}
+
+.nivel-22 {
+    grid-template-columns: repeat(3, 100px 3em 40%);
+}
+
+.nivel-23 {
+    grid-template-columns: 1fr 5fr;
+}
+
+.nivel-24 {
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+}
+
+.nivel-25 {
+    grid-template-columns: 75px 3fr 2fr;
+}
+
+.nivel-26 {
+    grid-template-rows: 20px 10px 10px 10px 5fr;
+}
+
+.nivel-27 {
+    grid-template: 60% / 200px;
+}
+
+.nivel-28 {
+    grid-template: 1fr 50px / 20% 80%;
+}
