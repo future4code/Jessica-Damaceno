@@ -1,0 +1,82 @@
+* {
+   margin: 0;
+   padding: 0; 
+}
+
+.cabecalho {
+    background-color: red;
+    height: 50px;
+    width: 100%;
+}
+
+#pai {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: red;
+}
+
+
+/* .teste{
+    color: purple;
+} */
+
+
+.video1 {
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+}
+
+
+
+/* .video1 > img{
+    widhdekdpekd
+} */
+
+img{
+    width: ;
+    height: ;
+}
+
+.video2 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+
+.video3 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+
+.video4 {
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+}
+
+.video5 {
+    background-color: rgb(212, 177, 17);
+    height: 100px;
+    width: 100px;
+}
+
+.video6 {
+    background-color: rgb(43, 183, 226);
+    height: 100px;
+    width: 100px;
+}
+
+.video7 {
+    background-color: rgb(43, 226, 67);
+    height: 100px;
+    width: 100px;
+}
+
+.video8 {
+    background-color: rgb(226, 43, 144);
+    height: 100px;
+    width: 100px;
+}
