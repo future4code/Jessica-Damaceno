@@ -12,8 +12,8 @@ function App() {
         <h2>Dados pessoais</h2>
         <CardGrande 
           imagem= {ProfilePicture}
-          nome="Astrodev" 
-          descricao="Oi, eu sou a Jéssica. Sou artista, aprendiz eterna, e atualmente estudante do curso de Web Full Stack na Labenu. Sou apaixonada pelo universo criativo, e vejo na programação, mais um meio sensacional pelo qual posso desenvolver ideias criativas e partilhar com quem também quer mergulhar nesse mar de descopertas incríveis! Aceita o convite?"
+          nome="Jéssica Damaceno" 
+          descricao="Oi, eu sou a Jéssica. Sou artista, aprendiz eterna, e atualmente estudante do curso de Web Full Stack na Labenu. Sou apaixonada pelo universo criativo, e vejo na programação, mais um meio sensacional pelo qual posso desenvolver ideias criativas e partilhar com quem também quer mergulhar nesse mar de descobertas incríveis! Aceita o convite?"
         />
         
         <CardPequeno 
