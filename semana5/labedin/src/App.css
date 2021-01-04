@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(160, 106, 7);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+}
+
+.page-section-container {
+  width: 50vw;
+  margin: 10px 0;
+  background: linear-gradient(to right, #603813, #b29f94);
+}
+
+.page-section-container > h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(173, 158, 158);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
