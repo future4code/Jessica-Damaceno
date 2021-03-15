@@ -4,7 +4,7 @@
   "description": "iniciando projeto com node",
   "main": "index.js",
   "scripts": {
-    // "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./index.js"
   },
   "keywords": [
@@ -16,4 +16,5 @@
   "dependencies": {
     "@types/node": "13.7.7",
     "typescript": "^3.8.3"
+  }
 }
