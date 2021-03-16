@@ -5,6 +5,7 @@
 // const idade = Number(process.argv[3]);
 
 // console.log(`Olá, ${process.argv[2]}, você tem ${idade} anos.`);
+//no terminal, ex: npm run start Jess 29
 
 // c)
 // const idade = Number(process.argv[3]);
@@ -34,15 +35,16 @@
 //     console.log(x / y);
 //     break;
 // }
+//no terminal, ex: npm run start soma num1 num2
 
 // Exercício 3
 
-const tarefas = ["Fazer comida", "Estudar", "Arrumar a casa"];
-const novaTarefa = process.argv[2];
+// const tarefas = ["Fazer comida", "Estudar", "Arrumar a casa"];
+// const novaTarefa = process.argv[2];
 
-const listaDeTarefas = tarefas.push(novaTarefa);
-console.table("Tarefa adicionada com sucesso! Tarefas:");
-console.table(tarefas);
+// const listaDeTarefas = tarefas.push(novaTarefa);
+// console.table("Tarefa adicionada com sucesso! Tarefas:");
+// console.table(tarefas);
 
 //Resultado lindo! <3
 //Tarefa adicionada com sucesso! Tarefas:
@@ -54,3 +56,4 @@ console.table(tarefas);
 // │    2    │ 'Arrumar a casa' │
 // │    3    │    'estudar+'    │
 // └─────────┴──────────────────┘
+//no terminal, ex: npm run start "estudar+"
