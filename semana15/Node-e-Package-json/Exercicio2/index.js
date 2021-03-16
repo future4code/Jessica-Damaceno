@@ -19,3 +19,15 @@ switch (opMat) {
     break;
 }
 //no terminal, ex: npm run start soma num1 num2
+
+// Desafios
+
+blue = "\u001b[34m";
+red = "\u001b[31m";
+green = "\033[0;32m";
+
+if (opMat && x && y) {
+  console.log(green, `${opMat} ${x} ${y}`);
+} else {
+  console.log("\u001b[31m", `Esperava 2 parâmetros só recebi um.`);
+}
