@@ -77,7 +77,7 @@ app.get("/countries/:id", (req: Request, res: Response) =>{
 
 //Endpoint 04
 
-//priemerio eu armazendo o id e o body em algum lugar e depois vejo como substituir a informação no array original, 
+//primeiro eu armazeno o id e o body em algum lugar e depois vejo como substituir a informação no array original, 
 //procuro o país naquele array, substituo e informo que foi sucesso.
 
 app.put("/countries/edit/:id", (req: Request, res: Response) => {
@@ -118,10 +118,9 @@ app.put("/countries/edit/:id", (req: Request, res: Response) => {
         //temos o array myCountries, o index que estou procurando e o .capital da capital que eu quero alterar
         myCountries[index].capital = body.capital;
       }
-      //eu posso imprimir pra mostrar as informações do país que foi alterado
-      console.log(myCountries[index]);
+      //eu posso imprimir pra mostrar as informações do país que foi alterado e/ou      
       //e mostro um status 200 informando que teve sucesso na alteração
-      res.status(200).send({ country:myCountries[index], message: "Update sucessfully!" });
+      res.status(200).send({ country:myCountries[index], message: "Update sucessfully!"});
     } catch (error) {
         // esse error.message vai pegar a meensagem de erro escrita ali a cima com o comando antes "throw new Error" que cria essa mensagem de erro.
       res.status(400).send({ message: error.message });
