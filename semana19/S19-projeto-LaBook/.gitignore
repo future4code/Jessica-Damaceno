@@ -1,0 +1,6 @@
+node_modules
+build
+.env
+.rest
+README.md
+README2.md
