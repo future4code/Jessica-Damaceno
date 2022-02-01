@@ -15,8 +15,12 @@ function retornaTamanhoArray(array) {
 }
 
 // EXERCÍCIO 02
+//array: [0,8,23,16,10,15,41,12,13]
 function retornaArrayInvertido(array) {
-
+    const arrayInvertido = array.slice(0).reverse()
+  
+  //   console.log(arrayInvertido) // apenas para testar
+      return arrayInvertido
 }
 
 
