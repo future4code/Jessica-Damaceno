@@ -25,8 +25,16 @@ function retornaArrayInvertido(array) {
 
 
 // EXERCÍCIO 03
+//array: [36,12,56,7,3]
 function retornaArrayOrdenado(array) {
+  const arrayOrdenado = array.sort(function(a,b){
+      if(a > b) return 1;
+      if(a < b) return -1;
+      return 0;
+  })
   
+  //console.log(arrayOrdenado) // apenas para testar
+ return arrayOrdenado
 }
 
 
