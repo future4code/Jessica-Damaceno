@@ -51,8 +51,15 @@ function retornaNumerosPares(array) {
 }
 
 // EXERCÍCIO 05
+//array: [1,2,3,4,5,6] //vetor original
+//Esperada: [4,16,36]
 function retornaNumerosParesElevadosADois(array) {
-  
+  const pairNumbers = array.filter(x => (x%2) == 0)
+
+  const pairNumbersSquared = pairNumbers.map(x => x**2)
+
+  console.log(pairNumbersSquared)
+  return pairNumbersSquared
 }
 
 // EXERCÍCIO 06
