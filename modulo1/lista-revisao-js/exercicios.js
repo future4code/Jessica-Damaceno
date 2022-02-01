@@ -38,10 +38,16 @@ function retornaArrayOrdenado(array) {
 }
 
 
-
 // EXERCÍCIO 04
+//array: [1,2,3,4,5,6,7,8]
+//Esperada: [2,4,6,8]
 function retornaNumerosPares(array) {
  
+  const pairNumbers = array.filter(x => x % 2 === 0)
+   
+     // console.log(pairNumbers) // apenas para testar
+
+  return pairNumbers  
 }
 
 // EXERCÍCIO 05
