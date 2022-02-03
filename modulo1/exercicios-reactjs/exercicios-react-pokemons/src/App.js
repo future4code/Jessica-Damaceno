@@ -1,12 +1,11 @@
+import { Router } from "./routes/router";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Pokemons</h1>
-      </header>
-    </div>
+     <Router/>
   );
-}
+};
 
 export default App;
