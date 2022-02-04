@@ -6,7 +6,7 @@ export const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/details/:id'>
+                <Route path='/details/:name'>
                     <DetailsScreen/>
                 </Route>
                 <Route path='/'>
