@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { DetailsScreenContainer } from './styled'
+import { DetailsScreenContainer, DivHeaderContainer } from './styled'
 import { PokemonHeader } from '../../components/pokemonHeader/pokemonHeader'
 import { PokemonStats } from '../../components/pokemonStats/pokemonStats'
 import { PokemonImage } from '../../components/pokemonImage/pokemonImage'
@@ -13,7 +13,8 @@ export const DetailsScreen = () => {
         types:[],
         hp: 0,
         attack: 0,
-        defense: 0
+        defense: 0,
+        sprites: {}
     })
 
     const { name } = useParams();
@@ -27,19 +28,22 @@ export const DetailsScreen = () => {
         }).catch(error => console.log(error))
     }, []);
 
+   
     return (
         <DetailsScreenContainer>
-            <div style={{width: '40%'}}>
-            <PokemonHeader name={details.name} types={details.types}/>
+            <DivHeaderContainer>
+                <PokemonHeader name={details.name} types={details.types}/>
                 
-            <PokemonStats hitPoints={details.hp} attack={details.attack} defense={details.defense}/>
-               
-           
-            </div>
-
-            <PokemonImage>
-
+                <PokemonStats hitPoints={details.hp} attack={details.attack} defense={details.defense}/>   
+            </DivHeaderContainer>
+        
+            <PokemonImage sprites={details.sprites.front_default}>
             </PokemonImage>
+            
+            <PokemonImage sprites={details.sprites.back_default}>
+            </PokemonImage>
+
+
         </DetailsScreenContainer>
     )
 }

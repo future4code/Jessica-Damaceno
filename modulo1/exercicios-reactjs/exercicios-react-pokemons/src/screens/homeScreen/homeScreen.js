@@ -15,13 +15,14 @@ export const HomeScreen = () => {
     ])
     
     const history = useHistory();
-
+    console.log(pokemons)
     useEffect(() => {
         axios.get(' https://pokeapi.co/api/v2/pokemon/')
         .then((response)=>{
             setPokemons(response.data.results);
         }).catch(error => console.log(error))
     }, [])
+
 
     const onClickPokemon = (name) => {
         history.push(`/details/${name}`)

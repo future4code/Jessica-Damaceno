@@ -5,3 +5,7 @@ export const DetailsScreenContainer = styled.div`
     width: 100vw;
     display: flex;
 `
+
+export const DivHeaderContainer = styled.div`
+    width: 40%;
+`
