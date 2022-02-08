@@ -1,0 +1,51 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+
+.Name {
+  text-align: center;
+  background-color: rgb(73, 165, 73);
+  color:rgb(248, 248, 223);
+  font-weight: bold;
+  padding: 07px;
+  border-radius: 05px;
+}
+
+ul{
+  /* flex-direction: column; */
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0px;
+  background-color:blanchedalmond;
+}
+
+li {
+  list-style: none;
+  padding: 0.5rem;
+  /* border: 1px solid; */
+  width: 150px;
+  margin: 10px;
+/* background-color: brown; */
+}
+
+.info {
+  background-color:rgb(248, 248, 223);
+  padding: 10px 0px;
+  border-radius: 20px;
+}
+
+.List {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Botao {
+  background-color: orange;
+  border: none;
+  color:rgb(248, 248, 223);
+  padding: 07px;
+  border-radius: 05px;
+}
