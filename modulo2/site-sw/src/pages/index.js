@@ -1,2 +1,3 @@
-export * from './CharacterListPage';
-export * from './CharacterDetailPage';
+
+export * from './CharacterListPage/CharacterListPage';
+export * from './CharacterDetailPage/CharacterDetailPage';

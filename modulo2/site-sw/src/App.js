@@ -1,12 +1,18 @@
-
+// import {CharacterDetailPage} from "./pages/CharacterDetailPage/CharacterDetailPage";
+// import { CharacterListPage } from "./pages/CharacterListPage/CharacterListPage";
+import { Router } from "./Routes/Router"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <h1>Star Wars</h1>
       </header>
+      {/* <CharacterListPage/>
+      <CharacterDetailPage/> */}
+        <Router/>
     </div>
+    
   );
 }
 
