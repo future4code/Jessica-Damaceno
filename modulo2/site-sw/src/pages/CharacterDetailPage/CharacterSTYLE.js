@@ -5,6 +5,7 @@ export const CharacterDetailPageContainer = styled.div`
   padding: 2rem;
   max-width: 720px;
   margin: 2rem auto;
+
 `;
 
 export const ActionButton = styled.button`

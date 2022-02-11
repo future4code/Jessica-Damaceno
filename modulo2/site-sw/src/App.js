@@ -5,9 +5,9 @@ import { Router } from "./Routes/Router"
 function App() {
   return (
     <div>
-      <header>
+      {/* <header>
         <h1>Star Wars</h1>
-      </header>
+      </header> */}
       {/* <CharacterListPage/>
       <CharacterDetailPage/> */}
         <Router/>
