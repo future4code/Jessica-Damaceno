@@ -1,13 +1,24 @@
 import styled from "styled-components";
 
 export const CharacterDetailPageContainer = styled.div`
-  border: 1px solid red;
-  padding: 2rem;
-  max-width: 720px;
-  margin: 2rem auto;
+  border: 1px;
+  background-color: #eeeeee;
 
+  margin: 20px auto;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  row-gap: 15px;
 `;
 
-export const ActionButton = styled.button`
-    padding: 20px;
+export const Titulo = styled.h1`
+  color: #000;
+  text-align: center;
+  font-size: 65px;
+`;
+
+export const MainContent = styled.div`
+  background-color: #eeeeee;
+  height: 980px;
 `;

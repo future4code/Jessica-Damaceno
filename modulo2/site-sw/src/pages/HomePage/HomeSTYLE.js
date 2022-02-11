@@ -1,19 +1,23 @@
 import styled from "styled-components";
+import starWarsBackground from "../../assets/starWarsBackground.jpg";
 
 export const HomePageContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 85vh;
-  border: 1px solid blue;
-  padding: 2rem;
-  max-width: 720px;
-  margin: 2rem auto;
+  height: 93vh;
+  background-image: url(${starWarsBackground});
+  background-repeat: no-repeat;
 `;
 
 export const ActionButton = styled.button`
-    padding: 20px;
-    border: 5px solid blue;
-   
+  padding: 20px;
+  width: 350px;
+  height: 70px;
+  font-size: 33px;
+  border-radius: 15px;
+  margin-left: 50px;
+  border: none;
+  font-weight: bold
 `;

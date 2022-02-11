@@ -9,7 +9,7 @@ import { HomePage, CharacterListPage, CharacterDetailPage } from "../pages/";
 export const Router = () => {
   return (
     <BrowserRouter>
-    <NavBar />
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/personagens" element={<CharacterListPage />} />

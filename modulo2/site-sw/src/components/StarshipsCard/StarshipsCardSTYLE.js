@@ -1,7 +1,7 @@
 import styled from "styled-components";
 // import starWars from "../../assets/starWars.jpg"
 
-export const PilotCardContainer = styled.div`
+export const StarshipsCardContainer = styled.div`
   width: 300px;
   /* height: 200px; */
   border: 1px solid black;
@@ -13,7 +13,7 @@ export const PilotCardContainer = styled.div`
   }
 `;
 
-export const Name = styled.p`
+export const Starships = styled.p`
   color: white;
   background-color: #1f2738;
   padding: 10px;

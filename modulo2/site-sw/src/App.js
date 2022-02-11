@@ -1,18 +1,18 @@
 // import {CharacterDetailPage} from "./pages/CharacterDetailPage/CharacterDetailPage";
 // import { CharacterListPage } from "./pages/CharacterListPage/CharacterListPage";
-import { Router } from "./Routes/Router"
+import { GlobalStyle } from "./constants/globalStyle";
+import { Router } from "./Routes/Router";
 
 function App() {
   return (
-    <div>
-      {/* <header>
-        <h1>Star Wars</h1>
-      </header> */}
-      {/* <CharacterListPage/>
+    <>
+      <GlobalStyle />
+      <div>
+        <Router />
+        {/* <CharacterListPage/>
       <CharacterDetailPage/> */}
-        <Router/>
-    </div>
-    
+      </div>
+    </>
   );
 }
 

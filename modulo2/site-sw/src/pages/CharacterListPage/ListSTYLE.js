@@ -1,29 +1,24 @@
 import styled from "styled-components";
 
 export const CharacterListPageContainer = styled.div`
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 85vh; */
-  /* align-items: center; */
-  border: 1px ;
-  background-color: #EEEEEE;
-  /* padding: 2rem; */
-  /* max-width: 720px; */
-  margin: 10rem auto;
+  border: 1px;
+  background-color: #eeeeee;
+
+  margin: 20px auto;
 
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   row-gap: 15px;
-
-  /* h1 {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    /* color: red; */
-  } */
-
-
 `;
 
+export const Titulo = styled.h1`
+  color: #000;
+  text-align: center;
+  font-size: 65px;
+`;
+
+export const MainContent = styled.div`
+  background-color: #eeeeee;
+  height: 980px;
+`;
