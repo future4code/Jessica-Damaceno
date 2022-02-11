@@ -6,11 +6,9 @@ export const NavBarStyle = styled.nav`
   color: white;
 
   h1 {
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
+   
+    margin: 20px;
+    font-size: 33px;
   }
 
   ul {
@@ -22,9 +20,10 @@ export const NavBarStyle = styled.nav`
 
     li {
       display: inline-block;
-      padding: 20px;
-      margin: 5px;
-      border: 1px solid;
+      padding: 24px;
+    
+      border-left: 1px solid;
+      height: 73.5px;
       &:hover {
         cursor: pointer;
         background-color: LightSlateGray;

@@ -7,13 +7,13 @@ export const HomePage = () => {
 
   return (
     <HomePageContainer>
-      <ActionButton onClick={() => navigation("/personagens")}>
-        Página de personagens
-        </ActionButton>
+      <ActionButton onClick={() => navigation("/detalhes")}>
+        Starships
+      </ActionButton>
 
-        <ActionButton onClick={() => navigation("/detalhes")}>
-        Página de detalhes
-        </ActionButton>
+      <ActionButton onClick={() => navigation("/personagens")}>
+        Pilots
+      </ActionButton>
     </HomePageContainer>
   );
 };

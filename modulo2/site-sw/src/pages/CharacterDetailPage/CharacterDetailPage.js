@@ -1,34 +1,36 @@
-
 import React from "react";
-import {useNavigate} from "react-router-dom"
-import { CharacterDetailPageContainer, ActionButton } from "./CharacterSTYLE";
+
+import {
+  CharacterDetailPageContainer,
+  Titulo,
+  MainContent,
+} from "./CharacterSTYLE";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import {BASE_URL} from '../../constants/url'
+import { BASE_URL } from "../../constants/url";
+import { StarshipsCard } from "../../components/StarshipsCard/StarshipsCard";
 
 export const CharacterDetailPage = () => {
-  const navigation = useNavigate();
+  const [getStarships, setGetStarships] = useState([]);
 
-  //   const [characterListPage, setCharacterListPage] = useState(["list"]);
-
-  const [ character, setCharacter] = useState([]);
-
-  useEffect (() => {
-    axios.get(`${BASE_URL}/people/`)
-    .then(({data}) => 
-      setCharacter(data.results)
-   ).catch(err => console.log(err))
-  }, [])
+  useEffect(() => {
+    axios
+      .get(`${BASE_URL}/starships/`)
+      .then(
+        ({ data }) => setGetStarships(data.results)
+        // console.log(data.results)
+      )
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
-    <CharacterDetailPageContainer>
-    <h1>detalhes</h1>
-    </CharacterDetailPageContainer>
+    <MainContent>
+      <Titulo>Starships</Titulo>
+      <CharacterDetailPageContainer>
+        {getStarships.map((starships, index) => (
+          <StarshipsCard key={index} starships={starships} image={"imagem"} />
+        ))}
+      </CharacterDetailPageContainer>
+    </MainContent>
   );
 };
-
-// export const selectPage = () => {
-//     return {
-
-//     }
-// }
