@@ -20,5 +20,10 @@ export const ActionButton = styled.button`
   border-radius: 15px;
   margin-left: 50px;
   border: none;
-  font-weight: bold
+  font-weight: bold;
+  &:hover {
+        cursor: pointer;
+        background-color: LightSlateGray;
+    }
+  
 `;
