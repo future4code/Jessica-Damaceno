@@ -17,17 +17,33 @@ export const NavBarStyle = styled.nav`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+  
+   
+  }
+`;
 
-    li {
+export const LiNotHighlighted = styled.li`
       display: inline-block;
       padding: 24px;
-    
       border-left: 1px solid;
       height: 73.5px;
       &:hover {
         cursor: pointer;
         background-color: LightSlateGray;
-      }
     }
-  }
-`;
+`
+
+export const LiWithProminence = styled.li`
+      display: inline-block;
+      padding: 24px;
+      color: #F56F36;
+      border-left: 1px solid;
+      height: 73.5px;
+      &:hover {
+        cursor: pointer;
+        background-color: LightSlateGray;
+
+        color: ;
+  
+    }
+`

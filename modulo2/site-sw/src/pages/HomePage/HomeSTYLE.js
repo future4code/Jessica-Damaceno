@@ -9,6 +9,7 @@ export const HomePageContainer = styled.div`
   height: 93vh;
   background-image: url(${starWarsBackground});
   background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const ActionButton = styled.button`

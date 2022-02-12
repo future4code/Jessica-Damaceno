@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../constants/url";
 import { PilotCard } from "../../components/PilotCard/PilotCard";
+import Loading from "../../components/Loading/Loading";
 
 export const CharacterListPage = () => {
   const [getCharactersList, setGetCharactersList] = useState([]);
@@ -22,11 +23,12 @@ export const CharacterListPage = () => {
   return (
     <MainContent>
       <Titulo>Pilots</Titulo>
-
       <CharacterListPageContainer>
+      {/* {getCharactersList.length > 0 ? getCharactersList : <Loading />} */}
         {getCharactersList.map((character, index) => (
           <PilotCard key={index} name={character.name} image={"imagem"} />
         ))}
+        {/* <Loading/> */}
       </CharacterListPageContainer>
     </MainContent>
   );

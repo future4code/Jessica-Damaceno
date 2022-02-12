@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../constants/url";
 import { StarshipsCard } from "../../components/StarshipsCard/StarshipsCard";
+// import Loading from "../../components/Loading/Loading";
 
 export const CharacterDetailPage = () => {
   const [getStarships, setGetStarships] = useState([]);
@@ -29,7 +30,9 @@ export const CharacterDetailPage = () => {
       <CharacterDetailPageContainer>
         {getStarships.map((starships, index) => (
           <StarshipsCard key={index} starships={starships} image={"imagem"} />
-        ))}
+          ))}
+          {/* {getStarships.length > 0 ? getStarships : <Loading />} */}
+          {/* <Loading/> */}
       </CharacterDetailPageContainer>
     </MainContent>
   );
