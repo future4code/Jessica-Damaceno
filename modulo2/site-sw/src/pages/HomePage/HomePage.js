@@ -17,6 +17,7 @@ export const HomePage = () => {
       <ActionButton onClick={() => navigation("/personagens")}>
         Pilots
       </ActionButton>
+  
     </HomePageContainer>
   );
 };

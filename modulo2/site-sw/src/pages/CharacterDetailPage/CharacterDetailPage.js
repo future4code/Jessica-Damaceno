@@ -6,33 +6,24 @@ import {
   MainContent,
 } from "./CharacterSTYLE";
 import { useState, useEffect } from "react";
-import axios from "axios";
-import { BASE_URL } from "../../constants/url";
 import { StarshipsCard } from "../../components/StarshipsCard/StarshipsCard";
-// import Loading from "../../components/Loading/Loading";
+import Loading from "../../components/Loading/Loading";
+import { getStarshipsRender } from "../../services/getStarships"
 
 export const CharacterDetailPage = () => {
   const [getStarships, setGetStarships] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${BASE_URL}/starships/`)
-      .then(
-        ({ data }) => setGetStarships(data.results)
-        // console.log(data.results)
-      )
-      .catch((err) => console.log(err));
-  }, []);
+    getStarshipsRender(setGetStarships)
+  }, []); 
 
   return (
     <MainContent>
       <Titulo>Starships</Titulo>
       <CharacterDetailPageContainer>
-        {getStarships.map((starships, index) => (
+        {getStarships.length > 0 ? getStarships.map((starships, index) => (
           <StarshipsCard key={index} starships={starships} image={"imagem"} />
-          ))}
-          {/* {getStarships.length > 0 ? getStarships : <Loading />} */}
-          {/* <Loading/> */}
+          )) : <Loading/>}
       </CharacterDetailPageContainer>
     </MainContent>
   );
