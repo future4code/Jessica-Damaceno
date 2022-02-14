@@ -21,6 +21,16 @@ export const NavBar = () => {
               Home
             </LiNotHighlighted>
           )}
+          
+          {location.pathname === "/detalhes" ? (
+            <LiWithProminence onClick={() => navigation("/detalhes")}>
+              Starships
+            </LiWithProminence>
+          ) : (
+            <LiNotHighlighted onClick={() => navigation("/detalhes")}>
+              Starships
+            </LiNotHighlighted>
+          )}
 
           {location.pathname === "/personagens" ? (
             <LiWithProminence onClick={() => navigation("/personagens")}>
@@ -29,16 +39,6 @@ export const NavBar = () => {
           ) : (
             <LiNotHighlighted onClick={() => navigation("/personagens")}>
               Pilots
-            </LiNotHighlighted>
-          )}
-
-          {location.pathname === "/detalhes" ? (
-            <LiWithProminence onClick={() => navigation("/detalhes")}>
-              Starships
-            </LiWithProminence>
-          ) : (
-            <LiNotHighlighted onClick={() => navigation("/detalhes")}>
-              Starships
             </LiNotHighlighted>
           )}
         </div>
