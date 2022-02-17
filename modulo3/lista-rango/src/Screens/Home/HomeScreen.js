@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getRestaurants } from "../../Requests/api";
 import { RestaurantCard } from "../../Components/RestaurantCard/RestaurantCard";
+// import { GlobalStyle } from "../../Constants/globalStyle";
+import { ScreenTitle, RestaurantCardContainerS } from "./HomeSTYLED";
 
 export const HomeScreen = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -13,13 +15,16 @@ export const HomeScreen = () => {
   }, []);
   return (
     <>
-      <h1>home</h1>
+      {/* <Header className="header" /> */}
+      <ScreenTitle>Bem-vindo ao Lista Rango</ScreenTitle>
       {restaurants.map((restaurant) => (
-        <RestaurantCard
-          key={restaurant.id}
-          name={restaurant.name}
-          address={restaurant.address}
-        />
+        <RestaurantCardContainerS>
+          <RestaurantCard
+            key={restaurant.id}
+            name={restaurant.name}
+            address={restaurant.address}
+          />
+        </RestaurantCardContainerS>
       ))}
     </>
   );
