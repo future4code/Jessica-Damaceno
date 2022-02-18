@@ -15,7 +15,10 @@ color: ${textColor};
 opacity: 1;
 `;
 
-export const RestaurantCardContainerS = styled.div`
+export const RestaurantCardsContainerS = styled.div`
   display: flex;
   flex-wrap: wrap;
+  /* width:: 30%; */
+  border: 1px solid gray;
+
 `;
