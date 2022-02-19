@@ -38,7 +38,7 @@ export const HomeScreen = () => {
             name={restaurant.name}
             address={restaurant.address}
           />
-        ))}
+        ))} 
       </RestaurantCardsContainerS>
     </>
   );

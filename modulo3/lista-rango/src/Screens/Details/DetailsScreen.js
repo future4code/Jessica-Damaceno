@@ -1,4 +1,8 @@
 
+
+import {AccordionSection} from "../Details/Accordion"
+
 export const DetailsScreen = () => {
-    return <h1>Details</h1>
-}
+  return  (
+  <AccordionSection/>
+  )};
